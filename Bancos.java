@@ -2,6 +2,8 @@ import java.util.*;
 
 public class Bancos {
 	protected Conta[] contas;
+	protected Funcionario[] funcionarios;
+	
 	public Bancos(int valor){
 		this.contas = new Conta[valor];
 	}
@@ -26,4 +28,6 @@ public class Bancos {
 		}
 		return totalContas;
 	}
+
+	
 }

@@ -1,21 +1,32 @@
 import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Banco {	
 	public static void main(String[] args){
-		Bancos banco;
-		Conta c = new Conta();
-		Conta cc = new ContaCorrente();
-		Conta cp = new ContaPoupanca();
-		AtualizadorDeContas adc = new AtualizadorDeContas(0.01);
-		banco = new Bancos(3);
-		c.deposita(1000);
-		cc.deposita(1000);
-		cp.deposita(1000);
-		banco.adiciona(c);
-		banco.adiciona(cc);
-		banco.adiciona(cp);
+//		   Set<Conta> conta = new HashSet<>();
+		   ArrayList<Conta> conta  = new ArrayList<Conta>();
+	        conta.add(new Conta(1, "Jurandir"));
+	        conta.add(new Conta(2, "Maneka"));
+	        conta.add(new Conta(3, "Bob Esponja"));
+	        conta.add(new Conta(4, "Caracol"));
+
+//	        //em algum ponto do programa que você não possui mais
+//	        //a variável de referência para o objeto que você quer
+//	        //encontrar na lista
+//	      //  Conta c = new Conta(4, "Caracol");
+//	        Conta c = new Conta(4, "");
+//	        System.out.println(conta.contains(c));
+	        
+	        //em algum ponto do programa que você não possui mais
+	        //a variável de referência para o objeto que você quer
+	        //encontrar na lista
+	      //  Conta c = new Conta(4, "Caracol");
+	        Conta c = new Conta(4, "Caracol");
+	        System.out.println(conta.contains(c));
+	        
 		
-		System.out.println(banco.pegaTotalDeContas());
 		
 	}
 
