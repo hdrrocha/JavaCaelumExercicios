@@ -1,4 +1,4 @@
-	 class ContaPoupanca implements Conta{
+	 class ContaPoupanca extends Conta{
 		private double saldo;
 
 		public void atualiza(double taxaSelic) {
