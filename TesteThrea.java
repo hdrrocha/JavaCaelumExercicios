@@ -20,7 +20,7 @@ public class TesteThread {
 			public void run() {
 				// TODO Auto-generated method stub
 				// Bolinhas brancas
-				for (int i = 0; i < 10; i++) {
+				for (int i = 0; i < 1001; i++) {
 					try {
 						System.out.println("BRANCA");
 						Thread.sleep(1000);
@@ -40,7 +40,7 @@ public class TesteThread {
 			public void run() {
 				// TODO Auto-generated method stub
 				// Bolinhas brancas
-				for (int i = 0; i < 10; i++) {
+				for (int i = 0; i < 1001; i++) {
 					try {
 						System.out.println("PRETA");
 						Thread.sleep(1000);
